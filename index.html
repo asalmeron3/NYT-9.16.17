@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NYT SEARCH</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<style type="text/css" src="style.css"></style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script>
+
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+	<div class="jumbotron" style="background-color: #20315A ; color: white;">
+		<h1 class="text-center"><strong><i class="fa fa-newspaper-o" style="font-size:50px;" ></i>
+		 New York Times Search</strong></h1>
+	</div>
+	
+	<div class="container">
+	<div class="panel-group"> 
+		<div class="panel panel-info">
+    			<div class="panel-heading"> <i class="fa fa-file-text-o" aria-hidden="true"></i> Search Parameters </div>
+
+    			<div class="panel-body">
+
+					<form>
+    					<div class="form-group">    		
+      					<label for="term">Search Term:</label>
+     					<input type="text" class="form-control" id="term">
+   						</div>
+
+    					<div class="form-group">
+     					<label for="retrieve">Number of Records to Retrieve:</label>     		  
+     			 		<select class="form-control" id="sel1">
+        				<option>1</option>
+        				<option>5</option>
+        				<option>10</option>
+       			  		</select>
+     					</div>
+
+  						<div class="form-group">
+     					<label for="startYear">Start Year (Optional): </label>
+     					<input type="text" class="form-control" id="startYear">
+  						</div>
+
+  						<div class="form-group">
+     					<label for="endYear">End Year (Optional):</label>
+     					<input type="text" class="form-control" id="endYear">
+  						</div>
+
+
+  							<button type="search" class="btn btn-default"><i class="fa fa-search"></i>Search</button>
+  							<button type="clear" class="btn btn-default"><i class="fa fa-trash-o"></i> Clear</button>
+ 		 			</form>
+
+ 				</div>	
+		</div>
+	</div>
+
+
+	<div class="panel-group" >
+    <div class="panel panel-info">
+      <div class="panel-heading"><i class="fa fa-arrow-up" aria-hidden="true"></i>Top Stories</div>
+      <div class="panel-body" id="articles"> </div>
+    </div>
+</div>
+</div>
+
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
+
